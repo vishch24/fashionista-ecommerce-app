@@ -35,7 +35,7 @@ const generateAccessAndXSRFToken = (userId) => {
 const COOKIE_OPTIONS = {
   // domain: "localhost",
   httpOnly: true,
-  secure: !dev,
+  secure: process.env.COOKIE_SECURE !== 'false',
   signed: true,
 };
 
