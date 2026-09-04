@@ -8,6 +8,7 @@ const shopRoutes = require('./routes/shop');
 const authRoutes = require('./routes/auth');
 const adminRoutes = require('./routes/admin');
 const { errorLogger, errorResponder } = require('./utils/middlewares');
+const sequelize = require('./utils/database');
 
 const app = express();
 
@@ -42,12 +43,24 @@ app.use('/api/shop', shopRoutes);
 app.use('/api/auth', authRoutes);
 app.use('/api/admin', adminRoutes);
 
-if (!isDev) {
-  app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
-  });
-}
+// if (!isDev) {
+//   app.get('*', (req, res) => {
+//     res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
+//   });
+// }
 
+// Application-level health check
+app.get('/health', async (req, res) => {
+  try {
+    await sequelize.authenticate();
+    res.status(200).json({ status: 'ok' });
+  } catch (error) {
+    console.error('Healthcheck DB Error:', error.message);
+    res.status(503).json({ status: 'unavailable', error: error.message });
+  }
+});
+
+// 404 handler
 app.use((req, res, next) => {
   const error = new Error('Not Found');
   error.status = 404;
