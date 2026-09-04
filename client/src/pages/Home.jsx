@@ -81,28 +81,28 @@ const Home = () => {
         <FeaturedCategory
           categoryName="MEN'S SHIRT"
           description="NEW LAUNCHES EVERY DAY, STYLES THAT PROMISE TO CAPTURE YOUR HEART"
-          imgUrl="https://firebasestorage.googleapis.com/v0/b/ecommerce-app-d78cc.appspot.com/o/side-l-1.jpg?alt=media&token=b3722265-0558-4cca-ba60-36cdc61a6a16"
+          imgUrl="https://images-do.nyc3.cdn.digitaloceanspaces.com/rtUgAvkUMm/product_images/1628672133.22.jpg"
           categoryUrl="/products/mens-shirt"
           imagePosition="right"
         />
         <FeaturedCategory
           categoryName="MEN'S T-SHIRT"
           description="EXPLORE A SECTION OF BREEZY FLUID SILHOUETTES TO FLATTER YOUR BODY"
-          imgUrl="https://firebasestorage.googleapis.com/v0/b/ecommerce-app-d78cc.appspot.com/o/side-s-2.jpg?alt=media&token=f64b43d2-6da6-4853-aa61-fce2450a9afc"
+          imgUrl="https://images-do.nyc3.cdn.digitaloceanspaces.com/rtUgAvkUMm/product_images/1631086909.76.jpg"
           categoryUrl="/products/mens-t-shirt"
           imagePosition="left"
         />
         <FeaturedCategory
           categoryName="HOODIES"
           description="FROM EVERYDAY CLASSICS TO FESTIVE OCCASIONWEAR, THESE ARE WARDROBE STAPLES FOR A REASON"
-          imgUrl="https://firebasestorage.googleapis.com/v0/b/ecommerce-app-d78cc.appspot.com/o/side-s-3.jpg?alt=media&token=b927cee4-92ed-4dc1-93b0-b99cc1f3d29b"
+          imgUrl="https://images-do.nyc3.cdn.digitaloceanspaces.com/rtUgAvkUMm/product_images/1628767003.Screenshot_2021-08-12_at_16-46-22_Mens_Ethnic_Print_Patchwork_Chest_Pocket_Drawstring_Pullover_Hoodie.png"
           categoryUrl="/products/hoodies"
           imagePosition="right"
         />
         <FeaturedCategory
           categoryName="WOMEN'S NIGHT SUIT"
           description="A CURATION OF VIVID ENSEMBLES LADEN WITH SPARKLES AND BRIGHT COLORS"
-          imgUrl="https://firebasestorage.googleapis.com/v0/b/ecommerce-app-d78cc.appspot.com/o/side-s-4.jpg?alt=media&token=8cd44a71-e6ab-4766-8881-919ccf099637"
+          imgUrl="https://webmerx.sgp1.cdn.digitaloceanspaces.com/funkytrend/category_images/3WsOhHu7x7JChKhjyFpFovSq5jYDYDIKDkHJNmmKXuA1DmObcDEgXP8a9MxyKC3AQhWFLFa8iMx1628846553.jpg"
           categoryUrl="/products/womens-night-suit"
           imagePosition="left"
         />
