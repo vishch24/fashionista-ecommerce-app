@@ -61,8 +61,11 @@ const Token = require('./models/token');
     ProductSize.belongsTo(ProductVariant);
     ProductSize.belongsToMany(Cart, { through: CartItem });
     Cart.belongsToMany(ProductSize, { through: CartItem });
-    await Order.sync({ alter: true });
-    await sequelize.sync();
+    // await Order.sync({ alter: true });
+    // await sequelize.sync();
+
+    await sequelize.sync({ alter: true });    
+    logger.info('Database tables synchronized successfully.');
   } catch (error) {
     logger.error(error);
   }
